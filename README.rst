@@ -4,6 +4,11 @@ Energenie
 
 Python module to control the `Energenie`_ add-on board for the `Raspberry Pi`_ used for remotely turning power sockets on and off.
 
+DEPRECATED
+==========
+
+This library is deprecated in favour of `GPIO Zero`_ which recently added `Energenie support`_.
+
 Installation
 ============
 
@@ -60,6 +65,8 @@ Open Source
 * Please use `GitHub issues`_ to submit bugs and report issues
 
 
+.. _GPIO Zero: http://gpiozero.readthedocs.io/
+.. _Energenie support: http://gpiozero.readthedocs.io/en/v1.2.0/api_boards.html#energenie
 .. _Energenie: https://energenie4u.co.uk/
 .. _Raspberry Pi: http://www.raspberrypi.org/
 .. _Ben Nuttall: https://github.com/bennuttall
@@ -68,4 +75,3 @@ Open Source
 .. _BSD Licence: http://opensource.org/licenses/BSD-3-Clause
 .. _GitHub Issues: https://github.com/bennuttall/energenie
 .. _GitHub: https://github.com/bennuttall/energenie/issues
-
