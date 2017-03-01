@@ -7,7 +7,7 @@ Python module to control the `Energenie`_ add-on board for the `Raspberry Pi`_ u
 DEPRECATED
 ==========
 
-This library is deprecated in favour of `GPIO Zero`_ which recently added `Energenie support`_.
+This library is deprecated in favour of `GPIO Zero`_ which has added `Energenie support`_.
 
 Installation
 ============
@@ -66,7 +66,7 @@ Open Source
 
 
 .. _GPIO Zero: http://gpiozero.readthedocs.io/
-.. _Energenie support: http://gpiozero.readthedocs.io/en/v1.2.0/api_boards.html#energenie
+.. _Energenie support: http://gpiozero.readthedocs.io/en/stable/api_boards.html#energenie
 .. _Energenie: https://energenie4u.co.uk/
 .. _Raspberry Pi: http://www.raspberrypi.org/
 .. _Ben Nuttall: https://github.com/bennuttall
