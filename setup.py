@@ -7,7 +7,7 @@ def read(fname):
 
 setup(
     name="energenie",
-    version="1.0.1",
+    version="1.0.2",
     author="Ben Nuttall",
     author_email="ben@raspberrypi.org",
     description="Remotely control power sockets from the Raspberry Pi",
@@ -21,7 +21,6 @@ setup(
         "energenie",
     ],
     install_requires=[
-        "RPi.GPIO",
     ],
     long_description=read('README.rst'),
     classifiers=[

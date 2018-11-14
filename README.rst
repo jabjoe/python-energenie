@@ -4,10 +4,8 @@ Energenie
 
 Python module to control the `Energenie`_ add-on board for the `Raspberry Pi`_ used for remotely turning power sockets on and off.
 
-DEPRECATED
-==========
+This has been tweaked so it can be used outside a persistent Python instance.
 
-This library is deprecated in favour of `GPIO Zero`_ which has added `Energenie support`_.
 
 Installation
 ============
@@ -16,21 +14,18 @@ On Raspberry Pi, install the energenie module in pip.
 
 Python 3::
 
-    sudo apt-get install python3-pip
-    sudo pip-3.2 install energenie
-
-Python 2::
-
-    sudo apt-get install python-pip
-    sudo pip install energenie
+    sudo python3 setup.py install
 
 Usage
 =====
 
 Example usage::
 
-    from energenie import switch_on, switch_off
+    from energenie import switch_on, switch_off, switches_init
     from time import sleep
+
+    # ready switches if this is first run
+    switches_init()
 
     # turn all plug sockets on and off
     switch_on()
@@ -49,6 +44,10 @@ Example usage::
     sleep(10)
     switch_off(1)
     switch_off(4)
+
+    # get states of which plugs on/off.
+    plugs_state_array = get_plug_state()
+
 
 Contributors
 ============
